@@ -1,0 +1,168 @@
+/* ===== GLOBAL ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8faff;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== NAVBAR ===== */
+/* Navbar Styling */
+.navbar {
+    background-color: #0d6efd !important;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff !important;
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ffc107 !important; /* yellow hover effect */
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+
+/* ===== SERVICES SECTION ===== */
+.services {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f0f6ff, #e6f0ff);
+    text-align: center;
+}
+
+.services > a {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #003d80;
+    margin-bottom: 40px;
+    text-decoration: none;
+    position: relative;
+}
+
+.services > a::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: #0d6efd;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Services container */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Service box styling */
+.service-box {
+    flex: 1 1 calc(20% - 30px);
+    background: white;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    border-top: 6px solid transparent;
+    text-align: center;
+}
+
+.service-box:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+/* Service box icon */
+.service-box i {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: inherit;
+}
+
+/* Service heading */
+.service-box h4 {
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+/* Service text */
+.service-box p {
+    font-size: 0.92rem;
+    color: #555;
+}
+
+/* Color accents */
+.yellow { border-top-color: #f4b400; color: #f4b400; }
+.red    { border-top-color: #db4437; color: #db4437; }
+.blue   { border-top-color: #4285f4; color: #4285f4; }
+.green  { border-top-color: #0f9d58; color: #0f9d58; }
+.purple { border-top-color: #9c27b0; color: #9c27b0; }
+.pink   { border-top-color: #e91e63; color: #e91e63; }
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #111;
+    color: #bbb;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 992px) {
+    .service-box { flex: 1 1 calc(33.333% - 30px); }
+}
+
+@media (max-width: 768px) {
+    .service-box { flex: 1 1 calc(50% - 30px); }
+}
+
+@media (max-width: 576px) {
+    .service-box { flex: 1 1 100%; }
+}
+
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-icons i {
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons i:hover {
+  color: #ffc107;
+}
+
+.footer h6, .footer h5 {
+  letter-spacing: 0.5px;
+}
+
+.footer p, .footer li, .footer a {
+  line-height: 1.6;
+}
